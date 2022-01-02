@@ -1,0 +1,332 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : main.vf
+// /___/   /\     Timestamp : 12/16/2021 23:32:20
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog D:/XilinxWork/RealProject/main.vf -w D:/XilinxWork/RealProject/main.sch
+//Design Name: main
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module D4_16E_HXILINX_main (D0, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, D12, D13, D14, D15, A0, A1, A2, A3, E);
+    
+
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   output D4;
+   output D5;
+   output D6;
+   output D7;
+   output D8;
+   output D9;
+   output D10;
+   output D11;
+   output D12;
+   output D13;
+   output D14;
+   output D15;
+
+   input  A0;
+   input  A1;
+   input  A2;
+   input  A3;
+   input  E;
+  
+   reg D0;
+   reg D1;
+   reg D2;
+   reg D3;
+   reg D4;
+   reg D5;
+   reg D6;
+   reg D7;
+   reg D8;
+   reg D9;
+   reg D10;
+   reg D11;
+   reg D12;
+   reg D13;
+   reg D14;
+   reg D15;
+
+      always @ (A0 or A1 or A2 or A3 or E)
+      begin
+         if(!E)
+           {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0000;
+        else
+        begin
+           case({A3,A2,A1,A0})
+             4'b0000 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0001;
+             4'b0001 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0010;
+             4'b0010 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0100;
+             4'b0011 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_1000;
+             4'b0100 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0001_0000;
+             4'b0101 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0010_0000;
+             4'b0110 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0100_0000;
+             4'b0111 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_1000_0000;
+             4'b1000 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0001_0000_0000;
+             4'b1001 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0010_0000_0000;
+             4'b1010 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0100_0000_0000;
+             4'b1011 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_1000_0000_0000;
+             4'b1100 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0001_0000_0000_0000;
+             4'b1101 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0010_0000_0000_0000;
+             4'b1110 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0100_0000_0000_0000;
+             4'b1111 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b1000_0000_0000_0000;
+          endcase
+        end
+     end 
+
+endmodule
+`timescale  100 ps / 10 ps
+
+module INV8_HXILINX_main (O, I);
+    
+
+   output [7:0] O;
+
+   input  [7:0] I;
+
+assign O = ~I;
+endmodule
+`timescale 1ns / 1ps
+
+module main(BlueSW, 
+            CLK, 
+            RedSW, 
+            YellowSW, 
+            buzzer_1, 
+            JOYGND, 
+            JoyVCC, 
+            LED, 
+            LED1, 
+            LED2, 
+            LED3, 
+            _2, 
+            _5, 
+            _6, 
+            _7, 
+            _8, 
+            _9, 
+            _10, 
+            _11, 
+            _12, 
+            _14, 
+            _15, 
+            _16, 
+            _17, 
+            _21, 
+            _22, 
+            _23, 
+            _24, 
+            _126, 
+            _131, 
+            _133, 
+            _137, 
+            _139, 
+            _141, 
+            _143);
+
+    input BlueSW;
+    input CLK;
+    input RedSW;
+    input YellowSW;
+   output buzzer_1;
+   output JOYGND;
+   output JoyVCC;
+   output LED;
+   output LED1;
+   output LED2;
+   output LED3;
+   output _2;
+   output _5;
+   output _6;
+   output _7;
+   output _8;
+   output _9;
+   output _10;
+   output _11;
+   output _12;
+   output _14;
+   output _15;
+   output _16;
+   output _17;
+   output _21;
+   output _22;
+   output _23;
+   output _24;
+   output _126;
+   output _131;
+   output _133;
+   output _137;
+   output _139;
+   output _141;
+   output _143;
+   
+   wire [0:7] Cols;
+   wire D0;
+   wire D1;
+   wire D2;
+   wire D3;
+   wire D4;
+   wire D5;
+   wire D6;
+   wire D7;
+   wire D8;
+   wire D9;
+   wire D10;
+   wire D11;
+   wire D12;
+   wire D13;
+   wire D14;
+   wire D15;
+   wire [3:0] Rows;
+   wire XLXN_104;
+   wire XLXN_148;
+   wire [0:7] XLXN_206;
+   wire [3:0] XLXN_223;
+   wire XLXN_227;
+   wire XLXN_240;
+   wire XLXN_273;
+   wire XLXN_274;
+   wire XLXN_280;
+   wire LED1_DUMMY;
+   wire LED2_DUMMY;
+   wire LED3_DUMMY;
+   
+   assign LED1 = LED1_DUMMY;
+   assign LED2 = LED2_DUMMY;
+   assign LED3 = LED3_DUMMY;
+   BUF  XLXI_3 (.I(Cols[1]), 
+               .O(_7));
+   BUF  XLXI_5 (.I(Cols[3]), 
+               .O(_11));
+   BUF  XLXI_6 (.I(Cols[4]), 
+               .O(_14));
+   BUF  XLXI_7 (.I(Cols[5]), 
+               .O(_16));
+   BUF  XLXI_8 (.I(Cols[6]), 
+               .O(_21));
+   BUF  XLXI_11 (.I(D0), 
+                .O(_6));
+   BUF  XLXI_12 (.I(D1), 
+                .O(_8));
+   BUF  XLXI_13 (.I(D2), 
+                .O(_10));
+   BUF  XLXI_14 (.I(D3), 
+                .O(_12));
+   BUF  XLXI_15 (.I(D5), 
+                .O(_17));
+   BUF  XLXI_16 (.I(D6), 
+                .O(_22));
+   BUF  XLXI_18 (.I(D4), 
+                .O(_15));
+   BUF  XLXI_30 (.I(D9), 
+                .O(_131));
+   BUF  XLXI_31 (.I(D10), 
+                .O(_133));
+   BUF  XLXI_32 (.I(D11), 
+                .O(_137));
+   BUF  XLXI_33 (.I(D13), 
+                .O(_141));
+   BUF  XLXI_34 (.I(D14), 
+                .O(_143));
+   BUF  XLXI_36 (.I(D12), 
+                .O(_139));
+   BUF  XLXI_73 (.I(Cols[0]), 
+                .O(_5));
+   BUF  XLXI_75 (.I(D8), 
+                .O(_126));
+   BUF  XLXI_76 (.I(D7), 
+                .O(_24));
+   INV  XLXI_77 (.I(XLXN_104), 
+                .O(_23));
+   (* HU_SET = "XLXI_97_0" *) 
+   D4_16E_HXILINX_main  XLXI_97 (.A0(Rows[0]), 
+                                .A1(Rows[1]), 
+                                .A2(Rows[2]), 
+                                .A3(Rows[3]), 
+                                .E(XLXN_148), 
+                                .D0(D0), 
+                                .D1(D1), 
+                                .D2(D2), 
+                                .D3(D3), 
+                                .D4(D4), 
+                                .D5(D5), 
+                                .D6(D6), 
+                                .D7(D7), 
+                                .D8(D8), 
+                                .D9(D9), 
+                                .D10(D10), 
+                                .D11(D11), 
+                                .D12(D12), 
+                                .D13(D13), 
+                                .D14(D14), 
+                                .D15(D15));
+   Test  XLXI_98 (.clk(XLXN_274), 
+                 .clkGame(XLXN_273), 
+                 .Left(LED2_DUMMY), 
+                 .NEW_PIECE_TYPE(XLXN_223[3:0]), 
+                 .Right(LED1_DUMMY), 
+                 .rotate(LED3_DUMMY), 
+                 .cols(XLXN_206[0:7]), 
+                 .led(LED), 
+                 .rows(Rows[3:0]));
+   to_1_2_10_100_1000Hz  XLXI_99 (.clockIn(CLK), 
+                                 .to1hz(), 
+                                 .to2hz(XLXN_273), 
+                                 .to10hz(), 
+                                 .to10kHz(XLXN_227), 
+                                 .to20Hz(), 
+                                 .to100hz(), 
+                                 .to1000hz(XLXN_274));
+   INV  XLXI_101 (.I(Cols[7]), 
+                 .O(XLXN_104));
+   BUF  XLXI_102 (.I(D15), 
+                 .O(_2));
+   VCC  XLXI_103 (.P(XLXN_148));
+   BUF  XLXI_104 (.I(Cols[2]), 
+                 .O(_9));
+   VCC  XLXI_105 (.P(JoyVCC));
+   GND  XLXI_106 (.G(JOYGND));
+   (* HU_SET = "XLXI_140_1" *) 
+   INV8_HXILINX_main  XLXI_140 (.I(XLXN_206[0:7]), 
+                               .O(Cols[0:7]));
+   AND2  XLXI_141 (.I0(XLXN_240), 
+                  .I1(RedSW), 
+                  .O(LED1_DUMMY));
+   AND2  XLXI_142 (.I0(XLXN_240), 
+                  .I1(BlueSW), 
+                  .O(LED2_DUMMY));
+   AND2  XLXI_143 (.I0(XLXN_240), 
+                  .I1(YellowSW), 
+                  .O(LED3_DUMMY));
+   counter06  XLXI_148 (.clear(), 
+                       .clk_in(XLXN_227), 
+                       .divide_7(), 
+                       .q(XLXN_223[3:0]));
+   BUF  XLXI_153 (.I(XLXN_280), 
+                 .O(XLXN_240));
+   to_1_2_10_100_1000Hz  XLXI_154 (.clockIn(CLK), 
+                                  .to1hz(), 
+                                  .to2hz(), 
+                                  .to10hz(XLXN_280), 
+                                  .to10kHz(), 
+                                  .to20Hz(), 
+                                  .to100hz(), 
+                                  .to1000hz());
+   GND  XLXI_156 (.G(buzzer_1));
+endmodule

@@ -1,0 +1,12 @@
+[Inputs]
+clk
+clkGame
+left
+right
+rotate
+=NEW_PIECE_TYPE[3:0]=
+[Outputs]
+led
+=rows[3:0]=
+=cols[0:7]=
+[BiDir]

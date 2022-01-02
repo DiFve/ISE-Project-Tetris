@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\XilinxWork\RealProject\main.ncd
+OUTFILE=D:\XilinxWork\RealProject\main.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=D:\XilinxWork\RealProject
+LICENSE=WebPack
+USER_INFO=__0_0_0

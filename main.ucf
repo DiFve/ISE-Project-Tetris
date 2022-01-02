@@ -1,0 +1,45 @@
+
+
+NET "_5" LOC = P5;
+NET "_7" LOC = P7;
+NET "_9" LOC = P9;
+NET "_11" LOC = P11;
+NET "_14" LOC = P14;
+NET "_16" LOC = P16;
+NET "_21" LOC = P21;
+NET "_23" LOC = P23;
+
+
+NET "_6" LOC = P6;
+NET "_8" LOC = P8;
+NET "_10" LOC = P10;
+NET "_12" LOC = P12;
+NET "_15" LOC = P15;
+NET "_17" LOC = P17;
+NET "_22" LOC = P22;
+NET "_24" LOC = P24;
+
+
+NET "_126" LOC = P126;
+NET "_131" LOC = P131;
+NET "_133" LOC = P133;
+NET "_137" LOC = P137;
+NET "_139" LOC = P139;
+NET "_141" LOC = P141;
+NET "_143" LOC = P143;
+NET "_2" LOC = P2;
+
+
+NET "BlueSW" LOC = P127;
+NET "RedSW" LOC = P124;
+NET "JoyVCC" LOC = P134;
+NET "JOYGND" LOC = P138;
+NET "LED1" LOC = P67;
+NET "LED2" LOC = P74;
+NET "LED3" LOC = P75;
+
+NET "LED" LOC = P82;
+NET "buzzer_1" LOC = P83;
+# PlanAhead Generated physical constraints 
+
+NET "YellowSW" LOC = P132;

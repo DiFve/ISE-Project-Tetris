@@ -1,0 +1,2 @@
+vhdl work "TestPackage.vhd"
+vhdl work "Tetris_Controller.vhd"

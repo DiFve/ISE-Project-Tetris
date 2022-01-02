@@ -1,0 +1,18 @@
+
+
+
+// Instantiate the module
+Test instance_name (
+    .clk(clk), 
+    .clkGame(clkGame), 
+    .left(left), 
+    .right(right), 
+    .NEW_PIECE_TYPE(NEW_PIECE_TYPE), 
+    .led(led), 
+    .rows(rows), 
+    .cols(cols), 
+    .rotate(rotate), 
+    .buzzer_1(buzzer_1)
+    );
+
+
